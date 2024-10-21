@@ -1,16 +1,13 @@
 ## Data Dashboard in Python
 django, plotly dash, matplotlib
 
-## Python Web Framework
-- Django
-
 ## Python Data Visualization 
-### Plotly Dash (dynamic, interactive, dashboard)
+### Plotly Dash (dynamic, realtime, interactive, dashboard)
+- Plotly Dash is used for creating interactive data visualizations.
 - Plotly Dash is built on top of:
 	- Plotly (`go` for custom graphs)
 	- Plotly Express (`px` for quick graphs)
 	- React (for interactive part of updating graphs)
-- Plotly Dash is used for creating interactive data visualizations
 - Plotly Dash technical understanding:
 	- `@callback()` controls IO (via a function decorator)
 		- `@callback( Input(...) )` 
@@ -40,3 +37,20 @@ django, plotly dash, matplotlib
 	```
 
 ### Matplotlib (static, report)
+- Matplotlib 
+
+## Python Web Framework
+- Django
+- Django MTV
+	- M: Django's Model is pulling data from FastAPI : data model, Object-relational mapper https://docs.djangoproject.com/en/5.1/topics/db/models/
+	- T: Django's Template is rendering our Plotly Dash templates: `{ handlebars }` holding `app.layout(...)` https://docs.djangoproject.com/en/5.1/topics/templates/
+	- V: Django's View is routes and input determining what Templates customers will see : URLs and Views `path('xx/')` https://docs.djangoproject.com/en/5.1/topics/http/urls/
+		- would we pass user input into dash's callback as input: `@callback( Input(...) )`
+	- Realtime: Plotly Dash is for visualizing interactive charts that update in **realtime**, like a monitoring dashboard
+		- so we can make sure machines are operating correctly in realtime
+		- with plotly dash we can interact with the dashboard's charts for further information why certain metrics are at the state they're in
+		- Timeseries data from Machines
+			- uptime, downtime is important, data modeled as timeseries data
+			- moving averages, windows, rate changes +x% -x%
+		- Django (M & V) will serve this data, and Django's Template (T) will act like a shell holding Plotly Dash figures  
+- Django ORM (M)
