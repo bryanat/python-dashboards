@@ -1,5 +1,5 @@
 ## Data Dashboard in Python
-django, plotly dash, matplotlib
+deep dive into tech stack with django & fastapi + plotly dash & matplotlib
 
 ## Python Data Visualization
 - Plotly Dash (interactive): Plotly `go` (low-level, interactive) & Plotly Express `px` (high-level, interactive)
@@ -85,7 +85,7 @@ django, plotly dash, matplotlib
 ## OEE
 - OEE: Overall Equipment Effectiveness
 - Metrics
-	- 85%: "It is often thought that a *World-Class OEE score is **85%***." - https://www.oee.com/world-class-oee/
+	- 85%: "It is often thought that a *World-Class OEE score is **85%***." - OEE.com
 		- 85% goal - 75% average = 10% diff of cost savings
 		- 10% = $xx? : 1% OEE KPI = $xx?
 		- "support *world class OEE* initiatives."
@@ -106,3 +106,5 @@ django, plotly dash, matplotlib
 		- data visualizations and interface tools for internal and external customers to monitor machines
 		- collecting data from our machines in the field and analyzing it to optimize performance, proactively maintain the machines, and provide actionable recommendations to our customers
 		- "collecting and analyzing field data to optimize machine performance, proactively maintain equipment, and provide actionable recommendations to customers"
+	- <img src="./docs/screenshot-from-oee-dot-com.png" width="66%" alt="OEE Formula and 85 percent Standard">
+	- screenshot OEE Formula and 85% "World-Class" Standard from https://www.oee.com/world-class-oee/
